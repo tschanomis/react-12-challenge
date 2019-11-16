@@ -3,27 +3,26 @@ import React, { Component } from 'react';
 class TabSelector extends Component {
   
   render() {
-    const { activeId } = this.props.activeId;
     return (
       <div className="TabSelector">
         <button
           id="home"
           onClick={this.props.handleChangeTab}
-          className={activeId === 'home' ? 'active' : ''}
+          className={this.props.activeId === 'home' ? 'active' : ''}
         >
           Home
         </button>
         <button
           id="about"
           onClick={this.props.handleChangeTab}
-          className={activeId === 'about' ? 'active' : ''}
+          className={this.props.activeId === 'about' ? 'active' : ''}
         >
           About
         </button>
         <button
           id="contact"
           onClick={this.props.handleChangeTab}
-          className={activeId === 'contact' ? 'active' : ''}
+          className={this.props.activeId === 'contact' ? 'active' : ''}
         >
           Contact
         </button>

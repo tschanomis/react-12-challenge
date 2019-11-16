@@ -29,6 +29,10 @@
   outline: none;
 }
 
+.TabSelector button:hover {
+  cursor: pointer;
+}
+
 .App-content {
   padding: 1em;
 }
